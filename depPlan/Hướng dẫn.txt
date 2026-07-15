@@ -1,0 +1,76 @@
+### Sơ đồ Tư duy (Tree of Thought): Chuyển đổi số Dịch vụ hành chính
+
+Cấu trúc tư duy dựa trên tài liệu tập huấn có thể được chia thành 3 trụ cột chính: Nền tảng định danh, Quy trình Dịch vụ công, và Hệ sinh thái số địa phương.
+
+**Trụ cột 1: Định danh điện tử (Nền tảng cốt lõi)**
+
+* Tài khoản định danh điện tử (VNeID) do Bộ Công an cấp hiện là phương thức đăng nhập chính thống và duy nhất để sử dụng các dịch vụ công.
+
+
+* Người dùng có thể đăng nhập bằng cách nhập số định danh, mật khẩu, mã OTP hoặc quét mã QR qua ứng dụng VNeID.
+
+
+* Trường hợp quên mật khẩu, có thể thực hiện thao tác "Quên mật khẩu" ngay trên ứng dụng VNeID.
+
+
+* Để thực hiện các thủ tục phức tạp trên hệ thống, tài khoản VNeID cần đạt mức độ 2.
+
+
+
+**Trụ cột 2: Dịch vụ công trực tuyến (Thực thi thủ tục)**
+
+* 
+**Tra cứu & Lựa chọn:** Tìm kiếm thủ tục hành chính bằng từ khóa (ví dụ: "Giấy phép lái xe") và chọn nộp trực tuyến.
+
+
+* 
+**Chuẩn bị & Nộp hồ sơ:** Hồ sơ số cần được chuẩn bị sẵn dưới dạng tệp PDF, JPG, hoặc PNG chụp rõ nét. Một trong những lỗi phổ biến khiến hồ sơ bị trả lại là ảnh mờ hoặc tệp vượt quá giới hạn dung lượng (thường dưới 10MB). Để khắc phục, cần sử dụng các công cụ nén file trước khi tải lên.
+
+
+* 
+**Thanh toán & Chuyển phát:** Người dùng có thể đăng ký nhận kết quả tại nhà thông qua bưu điện (Vietnam Post). Việc thanh toán lệ phí (nếu có) được thực hiện trực tuyến qua thẻ ngân hàng hoặc ví điện tử. Hồ sơ sẽ tự động bị hủy nếu người dùng không thanh toán trong vòng 3 ngày kể từ khi có yêu cầu.
+
+
+* 
+**Theo dõi:** Có thể tra cứu tình trạng xử lý thông qua mã hồ sơ và xem ngày hẹn trả kết quả.
+
+
+
+**Trụ cột 3: Hệ sinh thái Đắk Lắk Số (Tương tác địa phương)**
+
+* Ứng dụng "Đắk Lắk Số" có thể được cài đặt qua App Store, CH Play, hoặc sử dụng trực tiếp Mini App trên nền tảng Zalo (với dung lượng chỉ khoảng 2MB).
+
+
+* Việc đăng ký và đăng nhập có thể thực hiện qua số điện thoại hoặc quét mã QR trên thẻ Căn cước công dân.
+
+
+* Ứng dụng cung cấp các nhóm tiện ích đa dạng: Phản ánh hiện trường, xem camera trực tuyến, tra cứu quy hoạch, đặt lịch làm thủ tục, xem tin tức và danh bạ khẩn cấp.
+
+
+
+---
+
+### Tài liệu và Liên kết nghiên cứu chuyên sâu
+
+Dưới đây là các nguồn tài liệu, liên kết và hướng tìm kiếm trên YouTube để bạn nghiên cứu sâu hơn về các quy trình kỹ thuật và nghiệp vụ được nhắc đến trong tài liệu:
+
+**1. Về VNeID & Quản lý định danh điện tử**
+
+* **Cổng thông tin điện tử:** Website chính thức của Trung tâm Dữ liệu quốc gia về dân cư (C06 - Bộ Công an) tại `vneid.gov.vn`.
+* **Tài liệu chuyên sâu:** Tìm kiếm trên Google với từ khóa *"Sổ tay hướng dẫn sử dụng ứng dụng VNeID PDF"* để lấy tài liệu gốc từ Bộ Công an về các cơ chế xác thực.
+* **Kênh YouTube:** Bạn nên tìm kiếm trên YouTube kênh **"Trung tâm Dữ liệu quốc gia về dân cư"** hoặc các từ khóa như *"Hướng dẫn đăng ký VNeID mức 2"*, *"Cách lấy lại mật khẩu VNeID bằng NFC"* để xem trực quan các thao tác trên điện thoại.
+
+**2. Về Cổng Dịch vụ công Quốc gia & Nghiệp vụ trực tuyến**
+
+* **Cổng thông tin điện tử:** `dichvucong.gov.vn`.
+* **Tài liệu chuyên sâu:** Truy cập mục **"Hỗ trợ" -> "Hướng dẫn sử dụng"** ngay trên Trang chủ Cổng DVC Quốc gia. Tại đây có các tài liệu PDF/Word hướng dẫn từng bước cho mọi loại thủ tục hành chính (từ nộp hồ sơ, thanh toán phí đến ký số).
+* **Công cụ xử lý hồ sơ:** Để xử lý lỗi "tệp đính kèm quá nặng", bạn có thể nghiên cứu cách sử dụng các nền tảng miễn phí như `ilovepdf.com` (để ghép, nén tệp PDF) hoặc `tinypng.com` (để nén ảnh JPG/PNG mà không làm mất chất lượng).
+* **Kênh YouTube:** Tìm kiếm các từ khóa đặc thù nghiệp vụ như: *"Hướng dẫn nộp hồ sơ đổi giấy phép lái xe trực tuyến mức độ 4"*, *"Cách thanh toán phí dịch vụ công trực tuyến qua VNPT Money"*.
+
+**3. Về Hệ sinh thái "Đắk Lắk Số" & Chuyển đổi số địa phương**
+
+* **Cổng thông tin điện tử:** Các bài viết, chỉ đạo điều hành về ứng dụng này thường được cập nhật tại `daklak.gov.vn` (Cổng TTĐT tỉnh Đắk Lắk) hoặc `stttt.daklak.gov.vn` (Sở Thông tin và Truyền thông Đắk Lắk).
+* **Trải nghiệm thực tế:** Khuyến khích bạn mở ứng dụng Zalo, gõ vào thanh tìm kiếm **"Đắk Lắk Số"** và chọn mục "Mini Apps" để trải nghiệm trực tiếp giao diện và luồng xử lý (UX/UI) mà không cần cài đặt app.
+* **Kênh YouTube:** Kênh YouTube của Đài Phát thanh và Truyền hình Đắk Lắk (DRT). Bạn hãy dùng từ khóa tìm kiếm *"Đài phát thanh truyền hình Đắk Lắk ra mắt ứng dụng Đắk Lắk Số"* hoặc *"Hướng dẫn sử dụng app Đắk Lắk Số"* để xem các phóng sự và video hướng dẫn chi tiết từ chính quyền địa phương.
+
+Bạn muốn đi sâu vào quy trình kỹ thuật của hệ thống Dịch vụ công Quốc gia, hay muốn tìm hiểu thêm về cách vận hành của ứng dụng Đắk Lắk Số tại địa phương?
