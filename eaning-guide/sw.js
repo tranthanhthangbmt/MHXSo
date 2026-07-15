@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eaning-guide-cache-v1';
+const CACHE_NAME = 'eaning-guide-cache-v2';
 const urlsToCache = [
   './',
   './index.html',
@@ -20,10 +20,11 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('Opened cache');
+        console.log('Opened cache v2');
         return cache.addAll(urlsToCache);
       })
   );
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', event => {
@@ -69,4 +70,5 @@ self.addEventListener('activate', event => {
       );
     })
   );
+  return self.clients.claim();
 });
