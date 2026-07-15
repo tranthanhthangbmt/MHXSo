@@ -62,4 +62,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+
+    // Inject AI Chat Widget
+    const aiWidget = document.createElement('a');
+    aiWidget.href = "https://notebooklm.google.com/notebook/f2401ad6-f86f-4027-b073-1c4a43d5ae6c?authuser=9";
+    aiWidget.target = "_blank";
+    aiWidget.className = "ai-chat-widget";
+    aiWidget.innerHTML = `
+        <div class="ai-chat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 5.92 2 10.75C2 13.5 3.35 16 5.5 17.5V22L9 19.5C9.95 19.8 10.95 20 12 20C17.52 20 22 16.08 22 11.25C22 6.42 17.52 2 12 2Z" fill="white"/>
+                <circle cx="8" cy="11" r="1.5" fill="#10b981"/>
+                <circle cx="12" cy="11" r="1.5" fill="#10b981"/>
+                <circle cx="16" cy="11" r="1.5" fill="#10b981"/>
+            </svg>
+        </div>
+        <div class="ai-chat-text">Hỏi AI Tutor</div>
+    `;
+    document.body.appendChild(aiWidget);
 });

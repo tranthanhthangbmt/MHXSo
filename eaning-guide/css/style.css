@@ -597,3 +597,59 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================
+   AI CHAT WIDGET
+   ========================================= */
+.ai-chat-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #10b981, #059669); /* Google NotebookLM-like colors or green */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 12px 20px;
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+.ai-chat-widget:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(16, 185, 129, 0.5);
+    color: white;
+}
+
+.ai-chat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.ai-chat-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .ai-chat-widget {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+        border-radius: 50%;
+    }
+    .ai-chat-text {
+        display: none;
+    }
+    .ai-chat-icon {
+        margin-right: 0;
+    }
+}
