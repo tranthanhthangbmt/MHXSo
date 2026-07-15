@@ -1,9 +1,10 @@
-const CACHE_NAME = 'eaning-guide-cache-v2';
+const CACHE_NAME = 'eaning-guide-cache-v3';
 const urlsToCache = [
   './',
   './index.html',
   './tai-lieu-dao-tao.html',
   './thu-tuc-dang-ky-khai-sinh.html',
+  './huong-dan-cong-dan.html',
   './css/style.css',
   './js/main.js',
   './assets/hero_banner.png',
