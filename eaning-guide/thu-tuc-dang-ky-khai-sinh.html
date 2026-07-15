@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hướng Dẫn Đăng Ký Khai Sinh - UBND Xã Ea Ning</title>
     <meta name="description" content="Hướng dẫn chi tiết quy trình, thủ tục và hồ sơ cần thiết để đăng ký khai sinh tại UBND Xã Ea Ning.">
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="apple-touch-icon" href="assets/icon_pwa.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +30,9 @@
             </a>
             <nav class="nav">
                 <a href="index.html" class="nav-link">Trang Chủ</a>
-                <a href="index.html#procedures" class="nav-link active">Thủ Tục</a>
-                <a href="#contact" class="nav-link">Liên Hệ</a>
+                <a href="danh-cho-sinh-vien.html" class="nav-link">Cho Sinh viên</a>
+                <a href="danh-cho-ba-con.html" class="nav-link">Cho Bà con</a>
+                <a href="tai-lieu-dao-tao.html" class="nav-link">Tài Liệu Đào Tạo</a>
             </nav>
         </div>
     </header>
@@ -178,5 +184,12 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
 </body>
 </html>

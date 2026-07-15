@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn cho Bà con - UBND Xã Ea Ning</title>
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="apple-touch-icon" href="assets/icon_pwa.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+            font-size: 1.5rem; /* Rất to cho bà con dễ đọc */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2563eb;
+            text-align: center;
+            border-bottom: 4px solid #f97316;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #dc2626; /* Màu đỏ nổi bật */
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #f8fafc;
+            border: 4px solid #cbd5e1;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .highlight-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 1.8rem;
+            padding: 20px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            margin: 20px 0;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            margin: 20px 0;
+            border: 4px solid #2563eb;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .qr-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: #fffbeb;
+            border: 4px dashed #f59e0b;
+            border-radius: 16px;
+        }
+        .qr-code {
+            max-width: 250px;
+            height: auto;
+            margin: 20px auto;
+            border: 8px solid #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UBND Xã Ea Ning<br><span style="font-size: 1.5rem; color: #64748b;">Hỗ trợ Bà con tự làm thủ tục ở nhà</span></h1>
+
+        <div class="card">
+            <h2>1. Dùng Zalo - Cực kỳ dễ!</h2>
+            <p>Bà con không cần tải app mới cho nặng máy. Chỉ cần mở <strong>Zalo</strong>, gõ tìm <strong>"Đắk Lắk Số"</strong>.</p>
+            <p>Nhấn nút màu xanh bên dưới để vào làm thủ tục ngay:</p>
+            <a href="#" class="highlight-btn">👉 MỞ ĐẮK LẮK SỐ 👈</a>
+            <p><em>(Nhờ các cháu sinh viên chỉ tay vào mục "Nộp hồ sơ" màu cam trên màn hình nhé!)</em></p>
+        </div>
+
+        <div class="card">
+            <h2>2. Cách đăng ký VNeID (Tài khoản định danh)</h2>
+            <p>Bà con xem video hướng dẫn từng bước trên điện thoại dưới đây nhé. Bấm nút hình tam giác ở giữa để xem.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/PTS4HJj8UzM" title="Hướng Dẫn Kích Hoạt Tài Khoản VNeID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="qr-section">
+            <h2 style="margin-top: 0;">LƯU LẠI TRANG NÀY!</h2>
+            <p>Bà con nhờ các cháu sinh viên mở Zalo <strong>quét mã QR</strong> này để lưu trang web này vào máy, lần sau cần cứ mở ra xem ạ.</p>
+            <img src="assets/qr_code.png" alt="Mã QR" class="qr-code">
+            <p style="font-weight: 700; color: #b45309;">Nhờ sinh viên gửi link web này qua Zalo của bà con.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" style="font-size: 1.2rem; color: #2563eb; font-weight: bold;">← Quay về trang chủ</a>
+        </div>
+    </div>
+
+    <!-- PWA Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
