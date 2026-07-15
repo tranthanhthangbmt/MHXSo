@@ -1,0 +1,52 @@
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+body {
+    line-height: 1; }
+
+blockquote, q {
+    quotes: none; }
+
+blockquote {
+    &:before, &:after {
+        content: '';
+        content: none; } }
+
+q {
+    &:before, &:after {
+        content: '';
+        content: none; } }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+a:hover {
+  text-decoration: none;
+   }
+
+a {
+  color: inherit; }
+
+a:active, a:focus {
+  text-decoration: none;
+  color: inherit; }
+a{
+    text-decoration: none;
+}
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+}
+html{
+  overflow-x:hidden;
+  overflow-y:auto;
+  
+}

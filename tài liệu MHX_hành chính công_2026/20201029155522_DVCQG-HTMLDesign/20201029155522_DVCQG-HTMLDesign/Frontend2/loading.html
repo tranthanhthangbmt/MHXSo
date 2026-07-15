@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Dịch vụ công Quốc gia" name="description">
+    <meta content="900" http-equiv="refresh">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/highchart/highcharts.js"></script>
+</head>
+<body>
+	<div class="loading" style="background: #fff;">
+		<div class="icon">
+			<img src="img/loading.svg" alt="">
+		</div>
+		<style type="text/css">
+			.loading {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 1000;
+			}
+			.loading .icon {
+				width: 100px;
+				position: absolute;
+				top: 0px;
+				height: 100px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+				left: 0px;
+			}
+
+		</style>
+	</div>
+	<script type="text/javascript">
+		$(".list-menus a").click(function(e){
+			if($(this).parent().find("ul").length){
+				e.preventDefault();
+				$(this).parent().addClass("open");
+				$(this).parent().siblings().removeClass("open");
+			}
+		});
+	</script>
+</body>
+</html>

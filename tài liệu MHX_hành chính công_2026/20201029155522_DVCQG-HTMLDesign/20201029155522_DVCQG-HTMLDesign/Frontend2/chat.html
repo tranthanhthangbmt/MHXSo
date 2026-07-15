@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Dịch vụ công Quốc gia" name="description">
+    <meta content="900" http-equiv="refresh">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/livechat.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+</head>
+<body>
+	<div class="vs-icon-chat">
+        <div class="head">
+            Hỗ trợ trực tuyến <span class="fa icon fa-angle-down"></span>
+        </div>
+    </div>  
+    <div class="vs-chat-popup -mess">
+
+        <div class="vs-chat-heading">
+            <div class="top">
+                <div class="name">
+                	<div class="avatar" style="background-image: url(img/chat/customer-support.svg);">
+                        	
+                    </div>
+					<span class="title">Trợ lý thông minh</span>
+					<span class="txt">Hãy để tôi hỗ trợ bạn</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-close -ap icon-cross3"></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="vs-content-chat" id="listbotchat">
+            <div class="mess-box">
+                <div class="content-chat-box">
+                    <div class="mess-item -me">
+                        <div class="avatar" style="background-image: url(img/chat/customer-support.svg);">
+                        	
+                        </div>
+                        <div class="mess-content">
+                            <div class="mess">Hello world.</div>
+                            <div class="mess">Can you help me?</div>
+
+
+                        </div>
+                        <div class="time">08:38</div>
+                    </div>
+                    <div class="mess-item -me">
+                        <div class="avatar" style="background-image: url(img/chat/customer-support.svg);">
+                        	
+                        </div>
+                        <div class="mess-content">
+                            <a href="#" class="btn">Cơ quan thực hiện</a>
+                            <a href="#" class="btn">Thành phần hồ sơ hành chính</a>
+                            <a href="#" class="btn">Lệ phí</a>
+                            <a href="#" class="btn">Thời gian giải quyết</a>
+
+                        </div>
+                    </div>
+                    <div class="mess-item -you">
+                        <div class="mess-content">
+                            <div class="mess">Hello</div>
+                            <div class="mess">Can</div>
+                            
+
+                        </div>
+                        <div class="time">08:38</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-chat">
+                <div class="input-chat">
+                    <textarea class="form-control" placeholder="Nhập tin nhắn..."></textarea> 
+                    <div class="actions">
+                        <button class="btn -ap  icon-paper-clip"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script>
+			$(".vs-icon-chat").click(function(){
+	            $(this).addClass("hide-vs");
+	            $(".vs-chat-popup").addClass("show");
+	        });
+	        $(".vs-chat-popup .btn-close").click(function(){
+	            $(".vs-icon-chat").removeClass("hide-vs");
+	            $(".vs-chat-popup").removeClass("show");
+	        });
+	        $(".botchat .item").click(function(){
+	            $(".vs-chat-popup").addClass("-mess");
+	        });
+	        $(".vs-chat-popup .btn-back").click(function(){
+	            $(".vs-chat-popup").removeClass("-mess");
+	        });
+		</script>
+    </div>
+</body>
+</html>

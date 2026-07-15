@@ -1,0 +1,944 @@
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold.svg#SFUFutura") format("svg");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype"), url("../fonts/roboto/Roboto-Light.svg#SFUFutura") format("svg");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular.svg#SFUFutura") format("svg");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/roboto/Roboto-Medium.svg#SFUFutura") format("svg");
+  font-weight: 500;
+}
+/*Lora*/
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lora/Lora-Bold.woff") format("woff"), url("../fonts/lora/Lora-Bold.ttf") format("truetype"), url("../fonts/lora/Lora-Bold.svg#SFUFutura") format("svg");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lora/Lora-Regular.woff") format("woff"), url("../fonts/lora/Lora-Regular.ttf") format("truetype"), url("../fonts/lora/Lora-Regular.svg#SFUFutura") format("svg");
+  font-weight: normal;
+}
+/* Nunito */
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/NunitoSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito/NunitoSans-Bold.woff") format("woff"), url("../fonts/nunito/NunitoSans-Bold.ttf") format("truetype"), url("../fonts/nunito/NunitoSans-Bold.svg#SFUFutura") format("svg");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/NunitoSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito/NunitoSans-SemiBold.woff") format("woff"), url("../fonts/nunito/NunitoSans-SemiBold.ttf") format("truetype"), url("../fonts/nunito/NunitoSans-SemiBold.svg#SFUFutura") format("svg");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito/NunitoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito/NunitoSans-Regular.woff") format("woff"), url("../fonts/nunito/NunitoSans-Regular.ttf") format("truetype"), url("../fonts/nunito/NunitoSans-Regular.svg#SFUFutura") format("svg");
+  font-weight: normal;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul, li {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+/* Let's get this party started */
+html {
+  overflow-x: hidden;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eee;
+}
+
+/*
+example keyframes
+@include keyframes( incrediblehulk ){
+    0% {
+        color: #f8d2c0;
+    }
+    100% {
+        color: #0f0;
+    }
+}*/
+.background-graylight {
+  background-color: #f6f7f9;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fri {
+  float: right !important;
+}
+
+.lsn,
+.lsn > li {
+  list-style: none;
+}
+
+.posr {
+  position: relative;
+}
+
+.posa {
+  position: absolute;
+}
+
+.posf {
+  position: fixed;
+}
+
+.imgdf > img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.dtb {
+  display: table;
+}
+
+.dtbc {
+  display: table-cell;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.tac {
+  text-align: center;
+}
+
+.taj {
+  text-align: justify;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.tdu {
+  text-decoration: underline;
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.vat {
+  vertical-align: top;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.fw2 {
+  font-weight: 200;
+}
+
+.fw3 {
+  font-weight: 300;
+}
+
+.fw4 {
+  font-weight: 400;
+}
+
+.fw5 {
+  font-weight: 500;
+}
+
+.fw6 {
+  font-weight: 600;
+}
+
+.fw7 {
+  font-weight: 700;
+}
+
+.fw8 {
+  font-weight: 800;
+}
+
+.fw9 {
+  font-weight: 900;
+}
+
+.fwsb {
+  font-weight: 600;
+}
+
+.color-blue {
+  color: #824198;
+}
+
+.color-blue-bold {
+  color: #4B3C50;
+}
+
+.color-gray-bold {
+  color: #63676E;
+}
+
+.ovfh {
+  overflow: hidden;
+}
+
+.img-background-full-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  min-height: 101%;
+  min-width: 101%;
+}
+
+.tar {
+  text-align: right;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tleft {
+  text-align: left !important;
+}
+
+.tright {
+  text-align: right !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.left,
+.ap-left {
+  float: left;
+}
+
+.right,
+.ap-right {
+  float: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.xdot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.xo,
+.ap-xo {
+  overflow: hidden;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.fullw {
+  width: 100%;
+}
+
+.fullh {
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.cell {
+  display: table-cell;
+}
+
+.table {
+  display: table;
+}
+
+.invisible,
+.ap-invisible {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.vtop {
+  vertical-align: top;
+}
+
+.vcenter {
+  vertical-align: middle;
+}
+
+.vbottom {
+  vertical-align: bottom;
+}
+
+.f9 {
+  font-size: 9px;
+}
+
+.f10 {
+  font-size: 10px;
+}
+
+.f11 {
+  font-size: 11px;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f13 {
+  font-size: 13px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f15 {
+  font-size: 15px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f17 {
+  font-size: 17px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f19 {
+  font-size: 19px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f21 {
+  font-size: 21px;
+}
+
+.f22 {
+  font-size: 22px;
+}
+
+.f23 {
+  font-size: 23px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f25 {
+  font-size: 25px;
+}
+
+.f26 {
+  font-size: 26px;
+}
+
+.f27 {
+  font-size: 27px;
+}
+
+.f28 {
+  font-size: 28px;
+}
+
+.f29 {
+  font-size: 29px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.f31 {
+  font-size: 31px;
+}
+
+.f32 {
+  font-size: 32px;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.thick {
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .hidden-devide-1024 {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  .show-devide-1024 {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-devide-768 {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) {
+  .show-devide-768 {
+    display: none !important;
+  }
+}
+/*
+
+	Footer
+
+ */
+.footer {
+  background: #913938;
+  color: #fff;
+  padding: 10px 10px;
+  text-align: center;
+}
+.footer .add {
+  display: inline-block;
+  margin: 5px 15px;
+}
+.footer .add:last-child {
+  margin-right: 0px;
+}
+
+/*style home*/
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+  background: #fff;
+  line-height: 1.333;
+  color: #222;
+  position: relative;
+}
+
+.vs-icon-chat {
+  width: 200px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateY(0px);
+  visibility: visible;
+}
+.vs-icon-chat .head {
+  background: #FFC600;
+  color: #1E2F41;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.vs-icon-chat.hide-vs {
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  visibility: hidden;
+}
+
+.vs-chat-popup {
+  position: fixed;
+  bottom: 0px;
+  background: #fff;
+  width: 300px;
+  z-index: 10;
+  border-radius: 8px;
+  right: 0px;
+  transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.vs-chat-popup.show {
+  transform: translateY(0%);
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.vs-chat-popup .vs-chat-heading {
+  background: #fff;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.vs-chat-popup .vs-chat-heading .title {
+  font-weight: 13px;
+  color: #CE7A58;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.vs-chat-popup .vs-chat-heading .txt {
+  color: #888;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+}
+.vs-chat-popup .vs-chat-heading .top {
+  position: relative;
+}
+.vs-chat-popup .vs-chat-heading .top .actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.vs-chat-popup .vs-chat-heading .top .actions .btn {
+  width: 30px;
+  padding: 0px;
+  height: 30px;
+  min-width: 0px;
+  text-transform: none;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #F1F1F1;
+}
+.vs-chat-popup .vs-chat-heading .top .actions .btn:hover {
+  color: #fff;
+  background: #0084FF;
+}
+.vs-chat-popup .vs-chat-heading .name {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 40px;
+}
+.vs-chat-popup .vs-chat-heading .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+.vs-chat-popup .vs-content-chat {
+  padding: 20px;
+  margin-top: -40px;
+}
+.vs-chat-popup .vs-content-chat .item {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  height: 44px;
+  position: relative;
+  padding: 12px 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.vs-chat-popup .vs-content-chat .item:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+.vs-chat-popup .vs-content-chat .name {
+  font-size: 14px;
+  color: #232425;
+  text-shadow: none;
+}
+.vs-chat-popup .vs-content-chat .icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  font-weight: bold;
+  top: 5px;
+  line-height: 32px;
+  text-align: center;
+  left: 10px;
+  border-radius: 50%;
+  color: #fff;
+  text-shadow: none;
+}
+.vs-chat-popup .vs-content-chat .arrow {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  color: #232425;
+  text-shadow: none;
+  font-size: 16px;
+}
+.vs-chat-popup.-mess .hello-chat {
+  display: none;
+}
+.vs-chat-popup.-mess .vs-chat-heading {
+  padding-bottom: 10px;
+}
+.vs-chat-popup.-mess .vs-content-chat {
+  margin-top: 0px;
+}
+.vs-chat-popup.-mess .vs-content-chat {
+  padding: 0px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.vs-chat-popup.-mess .bottom-chat {
+  display: block;
+}
+.vs-chat-popup.-mess .mess-box {
+  display: block;
+}
+.vs-chat-popup.-mess .botchat {
+  display: none;
+}
+.vs-chat-popup .mess-box {
+  height: 300px;
+  text-shadow: none;
+  overflow: auto;
+  padding: 10px;
+  display: none;
+}
+.vs-chat-popup .mess-box .user-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.vs-chat-popup .mess-box .user-top .avatar {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  background: #25b7d3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vs-chat-popup .mess-box .user-top .name {
+  font-size: 10px;
+  display: inline-block;
+  color: #7b7b7b;
+}
+.vs-chat-popup .mess-box .user-top .time {
+  display: block;
+  font-size: 9px;
+  color: #9b9b9b;
+  margin-top: 10px;
+}
+.vs-chat-popup .content-chat-box .mess-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.vs-chat-popup .content-chat-box .mess-content .btn {
+  background: rgba(0, 132, 255, 0.15);
+  padding: 5px 10px;
+  color: #0064C1;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  min-width: 0px;
+  text-transform: none;
+}
+.vs-chat-popup .content-chat-box .mess-content .btn:hover {
+  background: #0084FF;
+  color: #fff;
+}
+.vs-chat-popup .content-chat-box .mess-item {
+  max-width: 90%;
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+.vs-chat-popup .content-chat-box .mess-item.-me {
+  padding-left: 40px;
+}
+.vs-chat-popup .content-chat-box .mess-item.-me .mess {
+  float: left;
+}
+.vs-chat-popup .content-chat-box .mess-item .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vs-chat-popup .content-chat-box .mess-item .mess {
+  background-color: #FFF;
+  border: 1px #ebebeb solid;
+  border-radius: 10px 10px 10px 0px;
+  color: #585d68;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  clear: both;
+  margin-bottom: 7px;
+  box-shadow: 0px 0px 20px rgba(0, 42, 118, 0.07);
+}
+.vs-chat-popup .content-chat-box .mess-item .mess:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.vs-chat-popup .content-chat-box .mess-item .time {
+  font-size: 9px;
+  color: #9b9b9b;
+}
+.vs-chat-popup .content-chat-box .mess-item.-you {
+  clear: both;
+  float: right;
+}
+.vs-chat-popup .content-chat-box .mess-item.-you:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.vs-chat-popup .content-chat-box .mess-item.-you .mess {
+  border-radius: 10px 10px 0px 10px;
+  color: #fff;
+  float: right;
+  background: #4285f4;
+  border: 0px;
+}
+.vs-chat-popup .bottom-chat {
+  background: #fff;
+  box-shadow: 0 0 50px 0 rgba(150, 165, 190, 0.34);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 60px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: none;
+}
+.vs-chat-popup .bottom-chat .input-chat {
+  position: relative;
+}
+.vs-chat-popup .bottom-chat .form-control {
+  height: 56px;
+  resize: none;
+  border-radius: 0px;
+  border: 0px;
+  box-shadow: none;
+  padding-right: 40px;
+}
+.vs-chat-popup .bottom-chat .actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  bottom: 0px;
+  background: #fff;
+  z-index: 10;
+  padding: 5px;
+}
+.vs-chat-popup .bottom-chat .actions .btn {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  font-size: 16px;
+  color: #8b8b8b;
+  border-radius: 50%;
+  background: #F1F1F1;
+  line-height: 30px;
+  text-align: center;
+}
+.vs-chat-popup .bottom-chat .actions .btn:hover {
+  color: #CE7A58;
+}
+
+/*# sourceMappingURL=livechat.css.map */

@@ -1,0 +1,166 @@
+@import "partials/fonts",
+"partials/reset",
+"partials/mixin",
+"partials/helper",
+"partials/vars",
+"partials/footer";
+
+/*style home*/
+
+* {
+    @include borderbox;
+    
+}
+
+body {
+    font-family: 'Roboto', Arial;
+    font-size: 14px;
+    background: #fff;
+    line-height: 1.333;
+    color: #222;
+    position: relative;
+    height: 100vh;
+}
+
+.wrapper-login{
+    max-width: 768px;
+    margin: auto;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+   -moz-transform:translateY(-50%); 
+    -o-transform:translateY(-50%); 
+    -webkit-transform:translateY(-50%); 
+    transform:translateY(-50%); 
+
+    .header-logo{
+        text-align: center;
+        margin-bottom:40px;
+        .logo{
+            display: inline-block;
+            vertical-align: middle;
+            img{
+                height: 60px;
+            }
+        }
+        .logo-text{
+            margin-left: 10px;
+            vertical-align: middle;
+            text-align: left;
+            display: inline-block;
+        }
+        .header-title{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 22px;
+            color: $link;
+        }
+        .header-sologan{
+            color: #5d5d5d;
+        }
+
+    }
+
+    .form-label-top{
+        position: relative;
+        margin-bottom: 30px;
+        .form-control{
+            box-shadow: none;
+            padding: 15px 10px;
+            height: auto;
+            color: #000;
+        }
+        &.active,&.focus{
+            .label-text{
+                background: #fff;
+                top: -15px;
+                left: 10px;
+                padding: 5px;
+                color: #7b7b7b;
+                right: auto;
+                bottom: auto;
+                font-size: 13px;
+                transition:all 0.2s ease;
+
+               
+            }
+
+        }
+        .label-text{
+            z-index: 10;
+            font-size: 14px;
+            top: 1px;
+            right: 1px;
+            transition:all 0.2s ease;
+            left: 1px;
+            bottom: 1px;
+            background: #fff;
+            padding: 15px 10px;
+            border-radius: 3px;
+            position: absolute;
+        }
+        .input-icon-right{
+            
+            position: relative;
+            .form-control{
+                padding-right: 40px;    
+
+            }
+            .icon{
+                position: absolute;
+                top: 18px;
+                right: 10px;
+                color: #999;
+                z-index: 20;
+                font-size: 16px;
+            }
+        }
+
+
+    }
+    .btn-submit{
+        background: $link;
+        color: #fff;
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        &:hover{
+            background: darken($main,10);
+        }
+
+    }
+    .copyright{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 13px;
+        color: #999;
+    }
+    .box-login{
+        display:table;
+        width:100%;
+        padding:30px 0px;
+        border:1px solid $border;
+    }
+    .box-login-account,.box-login-openID{
+        display:table-cell;
+        width:50%;
+        vertical-align:middle;
+        padding:0px 30px;
+    }
+    .box-login-openID{
+        border-left:1px solid $border;
+        text-align:center;
+        .title{
+            margin-bottom:10px;
+            font-size:20px;
+            font-weight:500;
+        }
+        .desc{
+            font-size:14px;
+            color:#777;
+            margin-bottom:20px;
+        }
+    }
+}

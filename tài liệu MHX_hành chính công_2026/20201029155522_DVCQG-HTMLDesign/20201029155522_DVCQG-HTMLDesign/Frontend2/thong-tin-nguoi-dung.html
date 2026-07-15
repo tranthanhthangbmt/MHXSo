@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Dịch vụ công Quốc gia" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/typeahead/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/highchart/highcharts.js"></script>
+</head>
+<body>
+	<div class="overlay-common"></div>
+	<div class="actions">
+		<a href="#ttnd" class="btn btn-second" data-toggle="modal">Thông tin người dùng</a>
+	</div>
+	<div class="modal" id="ttnd">
+
+		<div class="modal-dialog" style="max-width: 600px;">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="close -ap icon-close"  data-dismiss="modal">
+					
+					</div>
+					<div class="head">
+						<div class="main-title">Thông tin người dùng</div>
+					</div>
+					<div class="table-content">
+						<table class="table-info">
+							<tr>
+								<td class="key">Tên người dùng:</td>
+								<td class="value">Quản trị Bộ Tài Nguyên môi trường</td>
+							</tr>
+							<tr>
+								<td class="key">Tên đăng nhập:</td>
+								<td class="value">admin.botmmt</td>
+							</tr>
+							<tr>
+								<td class="key">Căn cước công dân</td>
+								<td class="value">132323232</td>
+							</tr>
+							<tr>
+								<td class="key">Giới tính</td>
+								<td class="value">Nam</td>
+							</tr>
+							<tr>
+								<td class="key">Ngày sinh</td>
+								<td class="value">23/12/1991</td>
+							</tr>
+							<tr>
+								<td class="key">Số điện thoại:</td>
+								<td class="value">043434343343</td>
+							</tr>
+							<tr>
+								<td class="key">Email:</td>
+								<td class="value">vanuoc.haui@gmail.com</td>
+							</tr>
+							<tr>
+								<td class="key">Nơi sinh:</td>
+								<td class="value">57, Huỳnh Thúc Kháng - Đống Đa - Hà Nội</td>
+							</tr>
+							<tr>
+								<td class="key">Đơn vị:</td>
+								<td class="value">Bộ tài nguyên môi trường</td>
+							</tr>
+							<tr>
+								<td class="key">Nguốn dữ liệu:</td>
+								<td class="value">Đường công văn</td>
+							</tr>
+							<tr>
+								<td class="key"></td>
+								<td class="value">
+									<button class="btn btn-second" data-dismiss="modal">Thoát</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="vendor/typeahead/index.js"></script>
+	<script type="text/javascript" src="vendor/typeahead/handlebars.js"></script>
+	<script src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(".menus li").each(function(){
+			var html="";
+			if($(this).hasClass("active")){
+				html=$(this).find(">ul").html();
+				$(this).find(">ul").remove();
+				console.log($(this).find(">ul").html());
+				$("#list-dropdown").html(html);
+
+
+			}
+		});
+		$('.slider').slick({
+		  	dots: true,
+		  	autoplay: true,
+			autoplaySpeed: 5000,
+		  	infinite: true,
+		  	speed: 300,
+		  	slidesToShow: 1,
+		  	arrows:false,
+		  	adaptiveHeight: true
+		});
+	</script>
+</body>
+</html>

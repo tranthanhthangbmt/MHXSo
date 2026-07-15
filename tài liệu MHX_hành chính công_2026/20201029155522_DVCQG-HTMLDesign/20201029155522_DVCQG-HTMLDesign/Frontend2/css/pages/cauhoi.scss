@@ -1,0 +1,299 @@
+.cau-hoi-pho-bien{
+	.list-questions{
+		.item{
+			display: block;
+			color: $main;
+			padding: 14px 0px;
+			cursor:pointer;
+			padding-left: 30px;
+			position: relative;
+			border-bottom: 1px solid $border1;
+			&:hover{
+				color: $second;
+			}
+			&:before{
+				font-family: ap;
+				content: "\e87d";
+				position: absolute;
+				top: 14px;
+				left: 0px;
+				color: #666;
+			}
+			&:last-child{
+				border-bottom: 0px;
+			}
+
+		}
+	}
+	.sidebar{
+		.head{
+			font-size: 20px;
+		}
+		.body{
+			padding: 0px;
+		}
+		.menus{
+			list-style:none;
+			margin:0px;
+			padding:0px;
+			>li{
+				&:before{
+					content:"\f105";
+					position:absolute;
+					top: 5px;
+					right:10px;
+					font-family:FontAwesome;
+				}
+				&.active{
+					&:before{
+						color:#fff;
+						content:"\f107";
+					}
+				}
+			}
+			a{
+				display: block;
+				padding: 7px 15px;
+				color: $text;
+				border-top: 1px solid $border1;
+				
+				
+
+
+			}
+			ul{
+				display: none;
+				list-style:none;
+				margin:0px;
+				padding:0px;
+				>li{
+					padding:0px 15px;
+				}
+			}
+			li{
+				position:relative;
+
+				&.active{
+					>a{
+						background:$main;
+						color:#fff;	
+					}
+					
+				}
+				&:hover{
+					>a{
+						background:#f4f5f6;	
+					}
+					
+				}
+				&.active{
+					
+					>a{
+						background:$main;
+						color:#fff;
+						font-weight: bold;
+					}
+					>ul{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.list-tt{
+		>li{
+			padding: 15px 0px;
+			border-bottom: 1px solid $border1;
+			>a{
+				padding-left: 30px;
+				&:before{
+					content: "";
+					width: 24px;
+					height: 24px;
+					background-image: url("../img/cauhoi/notepad.svg");
+				}
+			}
+			&:last-child{
+				border-bottom: 0px;
+			}
+		}
+	}
+	@media (max-width:768px){
+		.box-form{
+			.col-xs-12{
+				margin-bottom:10px;
+			}
+		}
+		.input-right-button{
+			padding-right:0px;
+			.btn{
+				position:relative;
+				margin-top:10px;
+			}
+		}
+	}
+}
+
+.popup-fix-chat{
+	position: fixed;
+	bottom: 40px;
+	right: 0px;
+	background:$main;
+	color: #fff;
+	z-index: 100;
+	padding: 5px 10px;
+	font-weight: 500;
+	.icon{
+		display: inline-block;
+		margin-right: 5px;
+		img{
+			height: 30px;
+		}
+	}
+	.text{
+		display: inline-block;
+	}
+	.close{
+		float: none;
+		font-weight: normal;
+		color: #fff;
+		text-shadow:none;
+		opacity: 0.8;
+		margin-left: 10px;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+
+.help-steps{
+	text-align:center;
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.text{
+		height: 90px;
+		overflow: hidden;
+	}
+	.item{
+		position: relative;
+		width: 25%;
+		float: left;
+		
+		padding: 10px;
+		&:after{
+			content:"";
+			height:4px;
+			position:absolute;
+			left:50%;
+			width:100%;
+			top:50px;
+			background:#7C964C;
+
+		}
+		&:last-child{
+			&:after{
+				display:none;
+			}
+		}
+		
+		
+	}
+	.number{
+		width: 80px;
+		height: 80px;
+		z-index: 10;
+		border-radius: 50%;
+		font-size:26px;
+		z-index: 10;
+		position:relative;
+		background: #7C964C;
+		color: #fff;
+		text-align: center;
+		line-height: 80px;
+		margin:auto;
+		margin-bottom:20px;
+	}
+	&.-col3{
+		.item{
+			width:33.333%;
+		}
+	}
+	@media (max-width: 991px){
+		border-bottom: 0px;
+		text-align: left;
+		.item{
+			width: 100%;
+			margin-bottom: 20px;
+			text-align:center;
+			padding-top:20px;
+			&:after{
+				display:none;
+			}
+		}
+		&.-col3{
+			.item{
+				width:100%;
+			}
+		}
+		.text{
+			height: auto;
+		}
+		.number{
+			bottom: auto;
+			top: 0px;
+			left: 0px;
+			right: auto;
+			position:relative;
+		}
+	}
+
+}
+.help-article{
+	line-height: 27px;
+	p,div,li{
+		margin-bottom:10px;
+	}
+	.step-item{
+		margin-bottom: 30px;
+		.row{
+			margin: 0px -10px;
+		}
+		.col-xs-12{
+			padding: 0px 10px;
+		}
+	}
+	.head{
+		display: table;
+		width: 100%;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 20px;
+		line-height: 28px;
+		.head-number,.text{
+			display: table-cell;
+			vertical-align: middle;
+
+		}
+		.head-number{
+			width: 60px;
+		}
+		.number{
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 26px;
+			font-weight: 500;
+			color: #fff;
+			display: block;
+			border-radius: 50%;
+			background: #7C964C;
+			text-align: center;
+		}
+		.text{
+			padding-left: 10px;
+		}
+	}
+}

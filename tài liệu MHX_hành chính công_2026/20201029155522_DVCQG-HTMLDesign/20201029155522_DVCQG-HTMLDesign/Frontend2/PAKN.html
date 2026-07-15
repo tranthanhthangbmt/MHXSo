@@ -1,0 +1,441 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Dịch vụ công Quốc gia" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/typeahead/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/highchart/highcharts.js"></script>
+</head>
+<body>
+	<div class="overlay-common"></div>
+	<div class="header">
+		<div class="container">
+			<div class="relative content">
+				<div class="logo-text">
+					<a href="#" class="logo">
+						<img src="img/header/quoc_huy.png" alt="">
+					</a>
+					<div class="header-title">Cổng Dịch vụ công quốc gia</div>
+					<div class="header-sologan">dichvucong.gov.vn</div>
+				</div>
+				<div class="nav-toggle">
+					<span class="-ap icon icon-menu"></span>
+				</div>
+				<div class="header-account">
+					<div class="buttons">
+						<a href="#" class="btn btn-login">Đăng ký</a>
+						<a href="#" class="btn btn-register">Đăng nhập</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="header-nav">
+		<div class="container">
+			<ul class="pull-left menus">
+				<li><a href="#"><span class="-ap icon icon-home4"></span></a></li>
+				<li>
+					<a href="#">Giới thiệu</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Dropdown 1</a></li>
+						<li><a href="#">Dropdown 2</a></li>
+						<li><a href="#">Dropdown 3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Công dân</a></li>
+				<li><a href="#">Doanh nghiệp</a></li>
+				<li><a href="#">Tổ chức khác</a></li>
+				<li class="active">
+					<a href="#">Tiện ích</a>
+					<ul class="dropdown-menu">
+						<li class="active"><a href="#">Tra cứu hồ sơ</a></li>
+						<li><a href="#">Thanh toán</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Phản ánh kiến nghị</a></li>
+				<li><a href="#">Hỗ trợ</a></li>
+				<li><a href="#">Đánh giá</a></li>
+			</ul>
+			<div class="header-account mobile-ds">
+				<div class="buttons">
+					<a href="#" class="btn btn-login">ĐĂNG NHẬP</a>
+					<a href="#" class="btn btn-register">ĐĂNG KÝ</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="header-bottom">
+		<div class="container">
+			<ul id="list-dropdown">
+			</ul>
+		</div>
+	</div>
+	<div class="section-pakn">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Hệ thống phản ánh kiến nghị</a></li>
+				<li><a href="#"> Trang chủ</a></li>
+			</ul>
+			<div class="row">
+				<div class="col-sm-9 col-xs-12">
+					<div class="box-form-wrapper form-bg-main">
+						<h1 class="form-title">Tiếp nhận phản ánh kiến nghị</h1>
+						<div class="box-form form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Đối tượng thực hiện <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12" style="padding-top: 7px;">
+									<div class="check-action" style="margin-right: 20px;">
+										<input type="radio" class="check">
+										<span class="name">Người dân</span>
+									</div>
+									<div class="check-action">
+										<input type="radio" class="check">
+										<span class="name">Doanh nghiệp</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Người dân/ Doanh nghiệp  <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<input class="form-control" placeholder="Nhập tên Người dân/ Doanh nghiệp"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Địa chỉ  <span class="red">*</span>
+								</div>
+								<div class="input col-sm-3 col-xs-12">
+									<div class="select-custom">
+										<select name="" id="" class="form-control">
+											<option>Tỉnh/Thành Phố</option>
+										</select>
+									</div>
+								</div>
+								<div class="input col-sm-3 col-xs-12">
+									<div class="select-custom">
+										<select name="" id="" class="form-control">
+											<option>Quận/Huyện</option>
+										</select>
+									</div>
+								</div>
+								<div class="input col-sm-3 col-xs-12">
+									<div class="select-custom">
+										<select name="" id="" class="form-control">
+											<option>Phường/Xã</option>
+										</select>
+									</div>
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<input type="text" class="form-control" placeholder="Nhập địa chỉ">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Số điện thoại  <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<input type="text" class="form-control" placeholder="Nhập số điện thoại">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Email  <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<input type="text" class="form-control" placeholder="Nhập email">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Phản ánh kiến nghị về việc  <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<input type="text" class="form-control" placeholder="Nhập tiêu đề PAKN">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Nội dung phản ánh <span class="red">*</span>
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<textarea type="text" class="form-control" placeholder="Nhập nội dung" style="height: 80px;resize: none;"></textarea>
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Chọn đơn vị tiếp nhận
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<div class="box-tags">
+										<span class="tag">
+											Văn phòng Chính phủ <span class="close -ap icon-close"></span>
+										</span>
+										<span class="tag">
+											Thành phố Thanh Hoá <span class="close -ap icon-close"></span>
+										</span>
+										<span class="tag">
+											Bộ Nông nghiệp <span class="close -ap icon-close"></span>
+										</span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Tài liệu đính kèm
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									<div class="row">
+										<div class="col-sm-4 col-xs-12">
+											<div class="select-file">
+												<a href="#" class="btn btn-file">Chọn file</a>
+												<input class="file" type="file"></input>
+											</div>
+										</div>
+										
+									</div>
+									
+									<ul class="list-file-image">
+										<li>
+											<div class="file" style="background-image: url(https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);">
+												<div class="close -ap icon-close"></div>
+											</div>
+										</li>
+										<li>
+											<div class="file" style="background-image: url(https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);">
+												<div class="close -ap icon-close"></div>
+											</div>
+										</li>
+										<li>
+											<div class="addnew file">
+												<div class="plus -ap icon-plus3"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+									Mã bảo mật
+								</div>
+								<div class="input col-sm-6 col-xs-12">
+									<div class="input-captcha">
+										<input class="form-control" placeholder="Nhập mã hồ sơ"></input>
+										<div class="code">
+											<div class="number">
+												<img src="https://dichvucong.gov.vn/jsp/imgcaptcha.jsp?1572859416203	" alt="">
+											</div>
+											<button class="btn-refresh">
+												<span class="-ap icon-loop2 icon"></span>
+											</button>
+										</div>	
+									</div>
+									
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<div class="col-sm-3 col-xs-12 label-text control-label">
+								</div>
+								<div class="input col-sm-9 col-xs-12">
+									
+									<button class="btn btn-main btn-submit">
+										Gửi phản ánh
+									</button>
+									<button class="btn btn-default">
+										Nhập lại
+									</button>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="main-title-sub">Kiến nghị mới trả lời</div>
+					<ul class="list-document -mess">
+						<li><a href="#">V/v Nghị định 49 của chính phủ gây khó khách hàng chuyển mạng, nhà mạng Vietnamobile ra điều khoản sai với quy định của chính phủ</a></li>
+						<li><a href="#">Phát hiện sự thật “Động trời” ở Đắc Lắc: Ông Hà Ngọc Anh là thương binh hạng nặng “Bị” Sở LĐTB&XH Đắc Lắc cắt chế độ MSLĐ dài hạn trái pháp luật từ năm 1986.</a></li>
+						<li><a href="#">V/v Nghị định 49 của chính phủ gây khó khách hàng chuyển mạng, nhà mạng Vietnamobile ra điều khoản sai với quy định của chính phủ</a></li>
+					</ul>
+					<div class="actions center">
+						<a href="#" class="btn btn-main">Xem tất cả</a>
+					</div>
+					<div class="divider-gray"></div>
+					<div class="main-title-sub">Kiến nghị xem nhiều nhất</div>
+					<ul class="list-document -mess">
+						<li><a href="#">V/v Nghị định 49 của chính phủ gây khó khách hàng chuyển mạng, nhà mạng Vietnamobile ra điều khoản sai với quy định của chính phủ</a></li>
+						<li><a href="#">Phát hiện sự thật “Động trời” ở Đắc Lắc: Ông Hà Ngọc Anh là thương binh hạng nặng “Bị” Sở LĐTB&XH Đắc Lắc cắt chế độ MSLĐ dài hạn trái pháp luật từ năm 1986.</a></li>
+						<li><a href="#">V/v Nghị định 49 của chính phủ gây khó khách hàng chuyển mạng, nhà mạng Vietnamobile ra điều khoản sai với quy định của chính phủ</a></li>
+					</ul>
+					<div class="actions center">
+						<a href="#" class="btn btn-main">Xem tất cả</a>
+					</div>
+					<div class="divider-gray"></div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="sidebar">
+						<div class="head">Lưu ý</div>
+						<div class="body">
+							<div class="article">
+								<p>1. Hệ thống tiếp nhận các phản ánh, kiến nghị về:</p>
+								<p>Hành vi chậm trễ, gây phiền hà hoặc không thực hiện, thực hiện không đúng quy định của cán bộ, công chức, viên chức trong giải quyết thủ tục hành chính...</p>
+								<p class="center">
+									<a href="#" class="link">Xem thêm</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="sidebar -hotline">
+						<div class="head">Đường dây nóng</div>
+						<div class="body">
+							<div class="info -icon">
+								<span class="key">Đường dây nóng:</span>
+								<span class="value">080 48929</span>
+								<span class="icon">
+									<img src="img/pakn/phone-call.svg">
+								</span>
+							</div>
+							<div class="divider-gray" style="margin: 10px 0px;"></div>
+							<div class="info">
+								<span class="key">Email:</span>
+								<span class="value" style="font-size: 16px;">thongtinchinhphu@chinhphu.vn</span>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar -statis">
+						<div class="head">Tình hình xử lý PAKN</div>
+						<div class="body">
+							<div class="info -icon">
+								<div class="key">PAKN đã trả lời</div>
+								<span class="value">23.432</span>
+								
+								<span class="icon">
+									<img src="img/pakn/c-check.svg">
+								</span>
+							</div>
+							<div class="divider-gray" style="margin: 10px 0px;"></div>
+							<div class="info -icon">
+								<div class="key">PAKN đang xử lý</div>
+								<span class="value">121</span>
+								
+								<span class="icon">
+									<img src="img/pakn/time.svg">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section section-menu-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="item col-sm-4 col-xs-12">
+					<a class="wrap">
+						<div class="icon">
+							<img src="img/home/trongdong.svg" alt="">
+						</div>
+						<div class="text">Cơ sở dữ liệu <br/>thủ tục hành chính</div>
+					</a>
+				</div>
+				<div class="item col-sm-4 col-xs-12">
+					<a class="wrap">
+						<div class="icon">
+							<img src="img/home/trongdong.svg" alt="">
+						</div>
+						<div class="text">Các câu hỏi <br/>thường gặp</div>
+					</a>
+				</div>
+				<div class="item col-sm-4 col-xs-12">
+					<a class="wrap">
+						<div class="icon">
+							<img src="img/home/trongdong.svg" alt="">
+						</div>
+						<div class="text">Hướng dẫn <br/> sử dụng</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="pull-left">
+					<span class="add"><span class="-ap icon icon-uniF136"></span> Số 1, Hoàng Hoa Thám, Ba Đình, Hà Nội</span>
+					<span  class="add"><span class="-ap icon icon-uniF195"></span>  080.43331</span>
+					<span  class="add"><span class="-ap icon  icon-printer"></span>080.44240</span>
+					<span  class="add"><span class="-ap icon icon-uniF117"></span> dichvucong@chinhphu.vn</span>
+				</div>
+				<div class="pull-right">Điều khoản sử dụng</div>
+				<div class="clearfix"></div>
+				
+				
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="pull-left">
+					<div class="name-comp">
+						<p class="title">Cổng Dịch vụ công quốc gia</p>
+					</div>
+				</div>
+				<div class="pull-right">
+					© Bản quyền thuộc Văn phòng chính phủ
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="vendor/typeahead/index.js"></script>
+	<script type="text/javascript" src="vendor/typeahead/handlebars.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(".menus li").each(function(){
+			var html="";
+			if($(this).hasClass("active")){
+				html=$(this).find(">ul").html();
+				$(this).find(">ul").remove();
+				console.log($(this).find(">ul").html());
+				$("#list-dropdown").html(html);
+
+
+			}
+		});
+		
+	</script>
+</body>
+</html>

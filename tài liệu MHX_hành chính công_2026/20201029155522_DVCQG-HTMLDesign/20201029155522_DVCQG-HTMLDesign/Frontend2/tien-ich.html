@@ -1,0 +1,473 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Thông tin kế hoạch mở rộng</title>
+	 <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="Dịch vụ công Quốc gia" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport"></meta>
+    <meta content="index, follow" name="ROBOTS">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/ap8/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/typeahead/style.css">
+    <link rel="stylesheet" type="text/css" href="vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/highchart/highcharts.js"></script>
+</head>
+<body>
+	<div class="overlay-common"></div>
+	<div class="header">
+		<div class="container">
+			<div class="relative content">
+				<div class="logo-text">
+					<a href="#" class="logo">
+						<img src="img/header/logo.png" alt="">
+					</a>
+					<!-- <div class="header-title"><img src="img/logo.svg" alt=""></div>
+					<div class="header-sologan">Kết nối, cung cấp thông tin và dịch vụ công mọi lúc, mọi nơi</div> -->
+				</div>
+				<div class="nav-toggle">
+					<span class="-ap icon icon-menu"></span>
+				</div>
+				<div class="header-account">
+					<div class="buttons">
+						<a href="#" class="btn btn-login">Đăng ký</a>
+						<a href="#" class="btn btn-register">Đăng nhập</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="header-nav">
+		<div class="container">
+			<ul class="pull-left menus">
+				<li class="active"><a href="#"><span class="-ap icon icon-home4"></span></a></li>
+				<li>
+					<a href="#">Giới thiệu</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Dropdown 1</a></li>
+						<li><a href="#">Dropdown 2</a></li>
+						<li><a href="#">Dropdown 3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Công dân</a></li>
+				<li><a href="#">Doanh nghiệp</a></li>
+				<li><a href="#">Tổ chức khác</a></li>
+				<li><a href="#">Tiện ích</a></li>
+				<li><a href="#">Phản ánh kiến nghị</a></li>
+				<li><a href="#">Hỗ trợ</a></li>
+				<li><a href="#">Đánh giá</a></li>
+			</ul>
+			<div class="header-account mobile-ds">
+				<div class="buttons">
+					<a href="#" class="btn btn-login">ĐĂNG NHẬP</a>
+					<a href="#" class="btn btn-register">ĐĂNG KÝ</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="header-bottom">
+		<div class="container">
+			<ul id="list-dropdown">
+			</ul>
+		</div>
+	</div>
+	<div class="section-tien-ich">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Cổng Dịch vụ công quốc gia </a></li>
+				<li><a href="#">Dành cho doanh nghiệp</a></li>
+			</ul>
+			<div class="box-search-tien-ich">
+				<div class="main-title -none">Tra cứu hồ sơ</div>
+				<ul class="tabs -style01">
+					<li><a href="#tctmhs" data-toggle="tab">Tra cứu theo mã hồ sơ</a></li>
+					<li><a href="#tccqth" data-toggle="tab">Tra cứu theo cơ quan thực hiện</a></li>
+					<li  class="active"><a href="#tcqrcode" data-toggle="tab">Tra cứu bằng QR code</a></li>
+					<li ><a href="#hstbkm" data-toggle="tab">Hồ sơ thông báo khuyễn mãi</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane" id="tctmhs">	
+						<div class="box-form">
+							<div class="row">
+								<div class="col-sm-7 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Mã hồ sơ <span class="red">*</span></div>
+										<input class="form-control" placeholder="Nhập mã hồ sơ"></input>
+									</div>
+								</div>
+								<div class="col-sm-5 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Mã bảo mật <span class="red">*</span></div>
+										<div class="input-captcha">
+											<input class="form-control" placeholder="Nhập mã hồ sơ"></input>
+											<div class="code">
+												<div class="number">
+													<img src="https://dichvucong.gov.vn/jsp/imgcaptcha.jsp?1572859416203	" alt="">
+												</div>
+												<button class="btn-refresh">
+													<span class="-ap icon-loop2 icon"></span>
+												</button>
+											</div>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="actions center">
+								<button class="btn btn-main btn-search">Tra cứu</button>
+							</div>
+						</div>
+						<div class="table-content">
+							<table class="table table-result-tthc">
+								<thead>
+									<th>Tên hồ sơ</th>
+									<th>Trạng thái</th>
+									<th>Mã HS </th>
+									<th>Đơn vị thực hiện</th>
+									<th>Ngày nộp</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Đăng ký khai sinh</td>
+										<td><div class="status -tn">Đã tiếp nhận</div></td>
+										<td>1234567890</td>
+										<td>Phường Láng Hạ</td>
+										<td>08/06/2019</td>
+									</tr>
+									<tr>
+										<td>Đăng ký khai sinh</td>
+										<td><div class="status -tkq">Đã trả kết quả</div></td>
+										<td>1234567890</td>
+										<td>Phường Láng Hạ</td>
+										<td>08/06/2019</td>
+									</tr>
+									<tr>
+										<td>Đăng ký khai sinh</td>
+										<td><div class="status -dangxl">Đang xử lý</div></td>
+										<td>1234567890</td>
+										<td>Phường Láng Hạ</td>
+										<td>08/06/2019</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane" id="hstbkm">	
+						<div class="box-form">
+							<div class="row">
+								<div class="col-sm-6 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Địa bàn khuyến mại</div>
+										<div class="select-custom">
+											<select name="" id="" class="form-control">
+												<option>Chọn tỉnh thành phố</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Doanh nghiệp khuyến mại</div>
+										<div class="select-custom">
+											<select name="" id="" class="form-control">
+												<option>Chọn doanh nghiệp</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Mã hồ sơ</div>
+										<input type="text" class="form-control" placeholder="Nhập hồ sơ">
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="form-group">
+										<div class="label-text">Mã bảo mật <span class="red">*</span></div>
+										<div class="input-captcha">
+											<input class="form-control" placeholder="Nhập mã hồ sơ"></input>
+											<div class="code">
+												<div class="number">
+													<img src="https://dichvucong.gov.vn/jsp/imgcaptcha.jsp?1572859416203	" alt="">
+												</div>
+												<button class="btn-refresh">
+													<span class="-ap icon-loop2 icon"></span>
+												</button>
+											</div>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="actions center">
+								<button class="btn btn-main btn-search">Tra cứu</button>
+							</div>
+						</div>
+						<div class="divider-gray"></div>
+						<div class="list-km-rw">
+							<div class="item">
+								<div class="wrap">
+									<div class="icon"><img src="img/tbkm/km.svg" alt=""></div>
+									<a class="title" data-toggle="modal" href="#modalCTKM">Chi ân khách hàng thân thiết</a>
+									<a class="post-location">Công ty ABC</a>
+									<div class="post-date">Từ ngày: 20/10/2019</div>
+									<div class="post-date">Đến ngày: 20/10/2019</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="wrap">
+									<div class="icon"><img src="img/tbkm/km.svg" alt=""></div>
+									<a class="title">Chi ân khách hàng thân thiết</a>
+									<a class="post-location">Công ty ABC</a>
+									<div class="post-date">Từ ngày: 20/10/2019</div>
+									<div class="post-date">Đến ngày: 20/10/2019</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="wrap">
+									<div class="icon"><img src="img/tbkm/km.svg" alt=""></div>
+									<a class="title">Chi ân khách hàng thân thiết</a>
+									<a class="post-location">Công ty ABC</a>
+									<div class="post-date">Từ ngày: 20/10/2019</div>
+									<div class="post-date">Đến ngày: 20/10/2019</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="wrap">
+									<div class="icon"><img src="img/tbkm/km.svg" alt=""></div>
+									<a class="title">Chi ân khách hàng thân thiết</a>
+									<a class="post-location">Công ty ABC</a>
+									<div class="post-date">Từ ngày: 20/10/2019</div>
+									<div class="post-date">Đến ngày: 20/10/2019</div>
+								</div>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="pull-left mart20">
+								<span class="text">Hiển thị</span>
+								<div class="inline select-custom">
+									<select name="" id="" class="form-control">
+										<option>20</option>
+									</select>
+								</div>
+								<span class="text">trên 30 bản ghi</span>
+							</div>
+							<div class="pull-right">
+								<ul class="pagination">
+									<li><a href="#" class="fa fa-angle-double-left"></a></li>
+									<li><a href="#" class="fa fa-angle-left"></a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+
+									<li><a href="#" class="fa fa-angle-right"></a></li>
+									<li><a href="#" class="fa fa-angle-double-right"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane active" id="tcqrcode">	
+						<div class="box-tcqrcode">
+							<div class="top">
+								<div class="image">
+									<img src="uploads/tc/tcapp.jpg" alt="">
+								</div>
+								<div class="content">
+									<div class="title">Thực hiện tải <a href="#" class="link underline">App eCitizen</a> hoặc truy cập app store và tìm kiếm “App eCitizen”</div>
+									<div class="actions">
+										<a href="#">
+											<img src="uploads/tc/appstore.png" alt="">
+										</a>
+										<a href="#">
+											<img src="uploads/tc/playstore.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>	
+							<div class="divider-gray"></div>
+							<div class="intro-steps">
+								<div class="title">Hướng dẫn tra cứu bằng QR code</div>
+								<div class="steps-in">
+									<div class="item">
+										<div class="image">
+											<img src="uploads/tc/1.jpg" alt="">
+										</div>
+										<div class="icon">
+											<span>
+												1
+											</span>
+										</div>
+										<div class="text">Người dùng chọn chức năng “Tra cứu tình trạng Hồ sơ” trên trang chủ </div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="uploads/tc/2.jpg" alt="">
+										</div>
+										<div class="icon">
+											<span>
+												2
+											</span>
+										</div>
+										<div class="text">Chọn “QR code” </div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="uploads/tc/3.jpg" alt="">
+										</div>
+										<div class="icon">
+											<span>
+												3
+											</span>
+										</div>
+										<div class="text">Di chuyển camera đến vùng chứa mã QR để quét mã tra cứu tình trạng Hồ sơ  </div>
+									</div>
+									<div class="item">
+										<div class="image">
+											<img src="uploads/tc/4.jpg" alt="">
+										</div>
+										<div class="icon">
+											<span class="fa fa-check">
+											</span>
+										</div>
+										<div class="text">Hiển thị kết quả tra cứu sau khi quét </div>
+									</div>
+								</div>	
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<div class="section section-menu-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="item col-sm-4 col-xs-12">
+					<a class="wrap">
+						<div class="icon">
+							<img src="img/home/trongdong.svg" alt="">
+						</div>
+						<div class="text">Câu hỏi thường gặp</div>
+					</a>
+				</div>
+				<div class="item col-sm-4 col-xs-12">
+					
+				</div>
+				<div class="item col-sm-4 col-xs-12">
+					<a class="wrap">
+						<div class="icon">
+							<img src="img/home/trongdong.svg" alt="">
+						</div>
+						<div class="text">Hướng dẫn sử dụng</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="add">
+					<p>Cơ quan chủ quản: Văn phòng chính phủ</p>
+				</div>
+				<div class="add">
+					<p>www.dichvucong.gov.vn</p>
+				</div>
+				<div class="add">
+					<p>Tổng đài hỗ trợ: 18001096</p>
+				</div>
+				<div class="add">
+					<p> Email: dichvucong@chinhphu.vn</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+	<div class="modal"  id="modalCTKM">
+		<div class="popup-box" style="max-width:768px;">
+			<div class="close -ap icon-close"  data-dismiss="modal">
+			
+			</div>
+			<div class="head">
+				<div class="main-title-sub">Chi tiết chương trình khuyến mại</div>
+			</div>
+			<table class="table-info">
+				<tr>
+					<td class="key nowrap">Cơ quan tiếp nhận</td>
+					<td class="value">Bộ công an</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Chương trình khuyến mại</td>
+					<td class="value">Tri ân khách hàng thân thiết</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Thương nhân</td>
+					<td class="value">Công ty ABC</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Thời gian khuyến mại</td>
+					<td class="value">Từ ngày 20/10/2019 đến ngày 20/11/2019</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Địa bàn thực hiện</td>
+					<td class="value">Thành phố Hà Nội;Thành phố Hải Phòng;Thành phố Đà Nẵng;Thành phố Hồ Chí Minh;Thành phố Cần Thơ;Tỉnh Hà Nam;Tỉnh Hà Tĩnh;Tỉnh Lai Châu;Tỉnh Lào Cai.</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Nội dung chương trình</td>
+					<td class="value">
+						<div class="article">
+							<p>• Thẻ Khách Hàng Thân Thiết được cấp cho công dân Việt Nam có CMND, người nước ngoài có Passport hoặc tố chức / doanh nghiệp. Mỗi khách hàng chỉ được sở hữu một (01) mã số thẻ:</p>
+							<p>• Thẻ Khách Hàng Thân Thiết được cấp cho công dân Việt Nam có CMND, người nước ngoài có Passport hoặc tố chức / doanh nghiệp. Mỗi khách hàng chỉ được sở hữu một (01) mã số thẻ:</p>
+							<p>• Thẻ Khách Hàng Thân Thiết được cấp cho công dân Việt Nam có CMND, người nước ngoài có Passport hoặc tố chức / doanh nghiệp. Mỗi khách hàng chỉ được sở hữu một (01) mã số thẻ:</p>
+							<p>• Thẻ Khách Hàng Thân Thiết được cấp cho công dân Việt Nam có CMND, người nước ngoài có Passport hoặc tố chức / doanh nghiệp. Mỗi khách hàng chỉ được sở hữu một (01) mã số thẻ:</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="key nowrap">Xem chi tiết chương trình</td>
+					<td class="value">
+						<ul class="list-document">
+							<li><a href="#" class="xdot" style="max-width:450px;">Thongbaokhuyenmai.pdf</a></li>
+							<li><a href="#" class="xdot"  style="max-width:450px;">Thongbaokhuyenmai.pdf</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="vendor/typeahead/index.js"></script>
+	<script type="text/javascript" src="vendor/typeahead/handlebars.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(".menus > li").each(function(){
+		    var html="";
+		    
+		    if($(this).find("ul li").hasClass("active")){
+		      	$(this).addClass("active");
+		      	html=$(this).find(">ul").html();
+		      	$(this).find(">ul").remove();
+		      	console.log($(this).find(">ul").html());
+		      	$("#list-dropdown").html(html);
+
+
+		    }
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg width="132" height="132" viewBox="0 0 132 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.1" cx="66" cy="66" r="66" fill="#CE7A58"/>
+<path d="M20 68H51V101H20V68Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M15 66.5C15 66.2239 15.2239 66 15.5 66H56.5C56.7761 66 57 66.2239 57 66.5V68.5C57 68.7761 56.7761 69 56.5 69H15.5C15.2239 69 15 68.7761 15 68.5V66.5Z" fill="#CE7A58"/>
+<path d="M74 66.5C74 66.2239 74.2239 66 74.5 66H115.5C115.776 66 116 66.2239 116 66.5V68.5C116 68.7761 115.776 69 115.5 69H74.5C74.2239 69 74 68.7761 74 68.5V66.5Z" fill="#CE7A58"/>
+<path d="M82 68H112V101H82V68Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M50.5312 54.73H81.8371V101.063H50.5312V54.73Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M60.5491 84.7837H71.8192V101.063H60.5491V84.7837Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M86.8459 76H94.3593V81.0089H86.8459V76Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M99.3684 76H106.882V81.0089H99.3684V76Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M86.8459 88H94.3593V93.0089H86.8459V88Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M99.3684 88H106.882V93.0089H99.3684V88Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M25.4866 76H33V81.0089H25.4866V76Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M25.4866 88H33V93.0089H25.4866V88Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M38.009 76H45.5224V81.0089H38.009V76Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M38.009 88H45.5224V93.0089H38.009V88Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+<path d="M55.5403 59.7388H64.3059V64.7477H55.5403V59.7388Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M55.5403 72.2612H64.3059V77.2702H55.5403V72.2612Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M68.0625 59.7388H76.8281V64.7477H68.0625V59.7388Z" stroke="#CE7A58" stroke-width="3"/>
+<path d="M68.0625 72.2612H76.8281V77.2702H68.0625V72.2612Z" stroke="#CE7A58" stroke-width="3"/>
+<rect x="65" y="30" width="3" height="17" fill="#CE7A58"/>
+<rect x="67" y="32" width="16.279" height="10.0179" stroke="#CE7A58" stroke-width="3"/>
+<path d="M66.184 45.9644L86.8459 54.73H45.5222L66.184 45.9644Z" fill="#F4F0EB" stroke="#CE7A58" stroke-width="3"/>
+</svg>
